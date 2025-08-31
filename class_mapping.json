@@ -1,0 +1,1 @@
+{"class_to_idx": {"book": 0, "mean": 1, "most": 2, "music": 3, "new": 4, "none": 5, "office": 6, "order": 7, "pants": 8, "party": 9}, "idx_to_class": {"0": "book", "1": "mean", "2": "most", "3": "music", "4": "new", "5": "none", "6": "office", "7": "order", "8": "pants", "9": "party"}}
