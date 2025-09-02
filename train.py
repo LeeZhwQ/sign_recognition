@@ -252,31 +252,11 @@ if __name__ == "__main__":
         # 绘制训练曲线
         print("\n绘制训练曲线...")
         trainer.plot_training_history()
-        
-        # 加载最佳模型进行最终测试
-        print("\n使用最佳模型进行最终测试...")
-        trainer.load_checkpoint('best_model.pth')
-        
-        test_accuracy,predictions,targets = trainer.evaluate_model(model,test_loader,device=device)
-        
-        print(f"最佳训练准确率: {best_train_acc:.2f}%")
-        print(f" 最终测试准确率: {test_accuracy*100:.2f}%")
+    
         
         
-        # 保存最终结果
-        results = {
-            'best_train_acc': best_train_acc,
-            'final_test_acc': test_accuracy * 100,
-            'num_classes': num_classes,
-            'model_params': sum(p.numel() for p in model.parameters()),
-            'seq_length': seq_length,
-            'input_dim': input_dim
-        }
-        
-        import json
-        with open('./sign_language_checkpoints/training_results.json', 'w', encoding='utf-8') as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
-        
+                                         
         print(f"训练结果已保存到: training_results.json")
             
             
+
