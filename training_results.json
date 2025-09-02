@@ -1,0 +1,7 @@
+{
+  "final_test_acc": 44.44444444444444,
+  "num_classes": 10,
+  "model_params": 4012810,
+  "seq_length": 100,
+  "input_dim": 96
+}
